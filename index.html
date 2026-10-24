@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charlette Comita - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><h3>Welcome to My Portfolio</h3><h1>Charlette M. Comita</h1></div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="themeBtn">Dark</button>
+</nav>
+
+<div class="hero" id="home">
+  <div>
+    <h1>IT Student &<br>Aspiring Frontend Dev<br>based in PH.</h1>
+    <p>Hi, I'm Charlette from Cebu City. I'm learning HTML, CSS, and JavaScript and I build simple, responsive websites for school projects.</p>
+    <a href="#work" class="btn">View My Projects →</a>
+  </div>
+  <div class="hero-img">
+    <img src="id (1).jpg" alt="Charlette Comita Photo">
+  </div>
+</div>
+
+<section id="about">
+  <h2>About Me & Skills</h2>
+  <p style="max-width:700px; margin-top:16px; color:var(--muted)">
+    I am an IT student interested in web design and frontend development. Currently learning the basics of responsive design, Figma to HTML conversion, and JavaScript interactions. I enjoy making clean and user-friendly layouts.
+  </p>
+  <div class="skills">
+    <span class="skill">HTML / CSS - Beginner to Intermediate</span>
+    <span class="skill">JavaScript - Learning</span>
+    <span class="skill">Figma - Basic</span>
+    <span class="skill">Responsive Design</span>
+  </div>
+</section>
+
+<section id="work">
+  <div class="section-head">
+    <h2>My Projects</h2>
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="web">Web</button>
+      <button class="filter" data-filter="school">School</button>
+    </div>
+  </div>
+  <div class="grid" id="projectGrid"></div>
+</section>
+
+<section id="contact">
+  <div class="contact-box">
+    <div>
+      <h2>Let's talk</h2>
+      <p class="muted">For school projects and collaborations.</p>
+      <p class="contact-info">
+        <strong>Email:</strong> <a href="mailto:charlettecomita@gmail.com" style="color:var(--text)">charlettecomita@gmail.com</a><br>
+        Cebu City, Philippines<br><br>
+        <a href="assets/resume.pdf" download class="btn" style="padding:10px 18px; font-size:0.9rem;">Download Resume (PDF)</a>
+      </p>
+    </div>
+    <form id="contactForm">
+      <label>Name<input type="text" required placeholder="Your name"></label>
+      <label>Email<input type="email" required placeholder="you@email.com"></label>
+      <label>Message<textarea required placeholder="Tell me about your project..."></textarea></label>
+      <button class="btn" type="submit">Send Message</button>
+      <p class="muted" style="font-size:0.8rem; margin-top:10px;">Note: This form is visual only for this activity. Please use the email link above.</p>
+    </form>
+  </div>
+</section>
+
+<footer>© 2026 Charlette Comita — Built with plain HTML, CSS & JS. Hosted on GitHub Pages.</footer>
+<script src="script.js"></script>
+</body>
+</html>
